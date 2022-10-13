@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
             }
             false -> {
                 val out = File(file.parent, "broadcast_wav_converted").apply { mkdir() }
-                convertFile(file, out, file.parentFile)
+                convertFile(file, out, file)
             }
         }
     } else {
